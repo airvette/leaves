@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from django.http import HttpResponse
-
 from django.shortcuts import render
 
 # Create your views here.
 
+
 def index(request):
-    return HttpResponse("This is the index page")
+    context = {
+        'message': 'This is a test post on the index page'
+    }
+    return render(request, 'organism/index.html', context)

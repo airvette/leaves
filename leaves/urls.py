@@ -19,5 +19,5 @@ from organism import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^organisms/index$', views.index)
+    url(r'^organism/index$', views.index)
 ]
